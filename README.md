@@ -1,53 +1,45 @@
-# Personal Restaurant
+# jungcollin-plugins
 
-요리 시뮬레이션 플러그인. 서브에이전트와 스킬의 협업 패턴을 학습하는 예제입니다.
+jungcollin의 Claude Code 플러그인 마켓플레이스입니다.
+
+## 플러그인 목록
+
+| 플러그인 | 설명 |
+|----------|------|
+| [personal-restaurant](./personal-restaurant) | 요리 시뮬레이션. 서브에이전트와 스킬의 협업 패턴 예제 |
+| [plugin-trace](./plugin-trace) | 실행 추적 시스템. JSON + HTML 대시보드로 작업 기록 |
+
+## 설치
+
+### 마켓플레이스 등록
+
+```
+/plugin marketplace add jungcollin/plugin-restaurant-examples
+```
+
+### 개별 플러그인 설치
+
+```
+/plugin install personal-restaurant@jungcollin
+/plugin install plugin-trace@jungcollin
+```
 
 ## 구조
 
 ```
-personal-restaurant/
-├── agents/                  # 전문 셰프 (서브에이전트)
-│   ├── wok-chef.md         # 볶음요리사
-│   ├── grill-chef.md       # 그릴요리사
-│   └── pastry-chef.md      # 제과제빵사
-└── skills/                  # 비법 노트 (스킬)
-    ├── wok-cooking/        # 볶음 전문
-    ├── grill-cooking/      # 구이 전문
-    ├── pastry-baking/      # 베이킹 전문
-    └── kitchen-common/     # 공통 규정
+.
+├── .claude-plugin/
+│   └── marketplace.json        # 마켓플레이스 설정
+├── personal-restaurant/        # 요리 시뮬레이션 플러그인
+│   ├── .claude-plugin/
+│   │   └── plugin.json
+│   ├── agents/                 # 전문 셰프 (서브에이전트)
+│   └── skills/                 # 비법 노트 (스킬)
+└── plugin-trace/               # 실행 추적 플러그인
+    ├── .claude-plugin/
+    │   └── plugin.json
+    └── skills/trace/           # trace 스킬
 ```
-
-## 설치
-
-### 마켓플레이스에서 설치
-
-```
-/plugin marketplace add jungcollin/plugin-restaurant-examples
-/plugin install personal-restaurant@jungcollin
-```
-
-### 로컬 테스트
-
-```bash
-claude --plugin-dir ~/personal-restaurant
-```
-
-## 사용 예시
-
-```
-김치볶음밥 만들어줘
-스테이크 미디엄으로 구워줘
-초코칩쿠키 만들어줘
-```
-
-## 개념
-
-| 구분 | 역할 | 비유 |
-|------|------|------|
-| 서브에이전트 | 요리 실행 | 전문 셰프 |
-| 스킬 | 기술 지식 | 비법 노트 |
-
-> 셰프가 바뀌더라도 비법 노트(스킬)만 있다면 품질 유지!
 
 ## 라이선스
 

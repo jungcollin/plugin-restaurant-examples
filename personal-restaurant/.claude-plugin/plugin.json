@@ -6,5 +6,16 @@
     "name": "jungcollin"
   },
   "repository": "https://github.com/jungcollin/plugin-restaurant-examples",
-  "license": "MIT"
+  "license": "MIT",
+  "skills": [
+    "./skills/wok-cooking",
+    "./skills/grill-cooking",
+    "./skills/pastry-baking",
+    "./skills/kitchen-common"
+  ],
+  "agents": [
+    "./agents/wok-chef.md",
+    "./agents/grill-chef.md",
+    "./agents/pastry-chef.md"
+  ]
 }

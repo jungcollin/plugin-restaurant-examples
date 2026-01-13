@@ -1,0 +1,12 @@
+{
+  "name": "jungcollin-plugins",
+  "description": "jungcollin의 Claude Code 플러그인 마켓플레이스. 요리 시뮬레이션, 실행 추적 등 다양한 플러그인을 제공합니다.",
+  "author": {
+    "name": "jungcollin"
+  },
+  "repository": "https://github.com/jungcollin/plugin-restaurant-examples",
+  "plugins": [
+    "./personal-restaurant",
+    "./plugin-trace"
+  ]
+}
