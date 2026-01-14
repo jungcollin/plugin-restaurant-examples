@@ -11,10 +11,6 @@
     {
       "name": "personal-restaurant",
       "source": "./personal-restaurant"
-    },
-    {
-      "name": "plugin-trace",
-      "source": "./plugin-trace"
     }
   ]
 }
