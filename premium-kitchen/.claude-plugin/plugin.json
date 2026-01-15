@@ -1,0 +1,15 @@
+{
+  "name": "premium-kitchen",
+  "version": "1.0.0",
+  "description": "최강록셰프(일식)와 요리괴물셰프(양식)의 프리미엄 요리 플러그인",
+  "repository": "https://github.com/jungcollin/plugin-demo",
+  "skills": [
+    "./skills/common",
+    "./skills/japanese",
+    "./skills/western"
+  ],
+  "agents": [
+    "./agents/최강록셰프.md",
+    "./agents/요리괴물셰프.md"
+  ]
+}

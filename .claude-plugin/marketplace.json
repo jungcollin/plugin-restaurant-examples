@@ -6,11 +6,15 @@
   "owner": {
     "name": "jungcollin"
   },
-  "repository": "https://github.com/jungcollin/plugin-restaurant-examples",
+  "repository": "https://github.com/jungcollin/plugin-demo",
   "plugins": [
     {
-      "name": "personal-restaurant",
-      "source": "./personal-restaurant"
+      "name": "simple-kitchen",
+      "source": "./simple-kitchen"
+    },
+    {
+      "name": "premium-kitchen",
+      "source": "./premium-kitchen"
     }
   ]
 }

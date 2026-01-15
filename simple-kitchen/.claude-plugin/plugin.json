@@ -1,0 +1,16 @@
+{
+  "name": "simple-kitchen",
+  "version": "1.0.0",
+  "description": "후덕죽셰프(중식)와 손종원셰프(양식)의 요리 플러그인",
+  "repository": "https://github.com/jungcollin/plugin-demo",
+  "skills": [
+    "./skills/common",
+    "./skills/chinese",
+    "./skills/wok",
+    "./skills/western"
+  ],
+  "agents": [
+    "./agents/후덕죽셰프.md",
+    "./agents/손종원셰프.md"
+  ]
+}
